@@ -1,27 +1,42 @@
-# SigaBem
+# Siga Bem - Sistema de Cálculo de Frete
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.9.
+## Descrição
 
-## Development server
+O Siga Bem é um sistema que permite aos usuários calcular o valor do frete de uma entrega. Este repositório contém o código-fonte do aplicativo, incluindo os componentes, serviços e outros recursos necessários.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Características Principaiss
 
-## Code scaffolding
+- Cálculo de Frete Simples: O sistema oferece um processo simples para calcular o custo de frete com base nas informações inseridas.
+- Validações de Dados: O sistema realiza validações de dados para garantir que as informações fornecidas sejam corretas.
+- Exibição de Resultados: Após o cálculo, o sistema exibe os resultados, incluindo o valor total do frete e a data prevista de entrega.
+- Mensagens de Erro: Em caso de erros, o sistema fornece mensagens de erro claras para orientar os usuários.
+- Interface Amigável: A interface do usuário é intuitiva e amigável, tornando o processo de cálculo de frete fácil de entender.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Tecnologias Utilizadas
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Angular: A aplicação é construída usando o framework Angular, que fornece uma estrutura robusta para o desenvolvimento de aplicativos web.
+- TypeScript: A linguagem TypeScript é usada para escrever o código do aplicativo, oferecendo tipagem estática e facilidade de manutenção.
+- API RESTful: O sistema se comunica com uma API RESTful para realizar o cálculo de frete.
+- Validações de Formulário: São aplicadas validações de formulário usando o módulo de formulários do Angular.
+- Estilização: O sistema é estilizado com folhas de estilo CSS e pode ser personalizado de acordo com as preferências.
+- 
+## Uso
 
-## Running unit tests
+Para executar o aplicativo, siga os seguintes passos:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone este repositório.
+2. Certifique-se de ter as dependências do Angular instaladas.
+3. Execute `ng serve` para iniciar o servidor de desenvolvimento.
+4. Acesse o aplicativo no navegador em `http://localhost:4200/`.
 
-## Running end-to-end tests
+## Contribuição
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas (issues) e enviar pull requests para melhorar o sistema.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+---
+
+Desenvolvido com ♥ por [Amanda Marques](https://github.com/AmandaMFurtado)
+
