@@ -1,0 +1,53 @@
+<div class="container mt-5">
+  <div class="alert alert-danger alert-dismissible fade show mt-5" role="alert" *ngIf="listaErros && listaErros.length > 0">
+    <button type="button" class="btn-close" aria-label="Close" (click)="fecharAlerta()"></button>
+    <ng-container *ngFor="let erro of listaErros">
+      <div>{{ erro.message }}</div>
+    </ng-container>
+  </div>
+  
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h2 class="fw-bold text-center">Consulta de Frete</h2>
+        <form [formGroup]="freteForm" (ngSubmit)="calcularFrete()" class="row g-3">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="cepOrigem">CEP de Origem</label>
+              <input type="text" id="cepOrigem" class="form-control" formControlName="cepOrigem" appCepMask>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="cepDestino">CEP de Destino</label>
+              <input type="text" id="cepDestino" class="form-control" formControlName="cepDestino" appCepMask>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="nomeDestinatario">Nome do Destinatário</label>
+              <input type="text" id="nomeDestinatario" class="form-control" formControlName="nomeDestinatario">
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="peso">Peso da Carga (em kg)</label>
+              <input type="number" id="peso" class="form-control" formControlName="peso">
+            </div>
+          </div>
+          <div class="col-12 text-center mt-3">
+            <button type="submit" class="btn btn-primary" >Calcular Frete</button>
+          </div>
+        </form>
+  
+   
+        <div *ngIf="freteResposta" class="mt-3">
+          <h3  class="fw-bold">Calculo do Frete</h3>
+          <p>Valor Total do Frete: {{ freteResposta.vlTotalFrete | currency : 'BRL'}}</p>
+          <p>Data Prevista de Entrega: {{ freteResposta.dataPrevistaEntrega | date: 'dd/MM/yyyy' }}</p>
+          <p>CEP de Origem: {{ freteResposta.cepOrigem | slice:0:5 }}-{{ freteResposta.cepOrigem | slice:5:8 }}</p>
+          <p>CEP de Destino: {{ freteResposta.cepDestino | slice:0:5 }}-{{ freteResposta.cepDestino | slice:5:8 }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  

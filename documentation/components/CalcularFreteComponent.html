@@ -1,0 +1,858 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>siga-bem documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">siga-bem documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  CalcularFreteComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/pages/calcular-frete/calcular-frete.component.ts</code>
+</p>
+
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Componente responsável por permitir aos usuários calcular o valor do frete de uma entrega.</p>
+
+    </p>
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code>OnInit</code>
+    </p>
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-calcular-frete</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./calcular-frete.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./calcular-frete.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#freteForm" >freteForm</a>
+                            </li>
+                            <li>
+                                <a href="#freteRequisicao" >freteRequisicao</a>
+                            </li>
+                            <li>
+                                <a href="#freteResposta" >freteResposta</a>
+                            </li>
+                            <li>
+                                <a href="#listaErros" >listaErros</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#calcularFrete" >calcularFrete</a>
+                            </li>
+                            <li>
+                                <a href="#createFreteForm" >createFreteForm</a>
+                            </li>
+                            <li>
+                                <a href="#fecharAlerta" >fecharAlerta</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(sigaBemService: <a href="../injectables/CalcularFreteService.html" target="_self">CalcularFreteService</a>, formBuilder: FormBuilder)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/pages/calcular-frete/calcular-frete.component.ts:37</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Construtor do componente <code>CalcularFreteComponent</code>.</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>sigaBemService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CalcularFreteService.html" target="_self" >CalcularFreteService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <p>Um serviço para calcular o frete.</p>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>formBuilder</td>
+                                                  
+                                                        <td>
+                                                                    <code>FormBuilder</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <p>Um serviço para criar formulários reativos.</p>
+
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="calcularFrete"></a>
+                    <span class="name">
+                        <span ><b>calcularFrete</b></span>
+                        <a href="#calcularFrete"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>calcularFrete()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="58"
+                                    class="link-to-prism">src/app/pages/calcular-frete/calcular-frete.component.ts:58</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Realiza o cálculo do frete com base nos dados fornecidos pelo usuário.</p>
+</div>
+
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createFreteForm"></a>
+                    <span class="name">
+                        <span ><b>createFreteForm</b></span>
+                        <a href="#createFreteForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createFreteForm()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="84"
+                                    class="link-to-prism">src/app/pages/calcular-frete/calcular-frete.component.ts:84</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Cria o formulário de cálculo de frete com as validações necessárias.</p>
+</div>
+
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fecharAlerta"></a>
+                    <span class="name">
+                        <span ><b>fecharAlerta</b></span>
+                        <a href="#fecharAlerta"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>fecharAlerta()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="96"
+                                    class="link-to-prism">src/app/pages/calcular-frete/calcular-frete.component.ts:96</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Fecha o alerta de erro exibido ao usuário.</p>
+</div>
+
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="50"
+                                    class="link-to-prism">src/app/pages/calcular-frete/calcular-frete.component.ts:50</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Inicializa o componente, criando o formulário de cálculo de frete.</p>
+</div>
+
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="freteForm"></a>
+                    <span class="name">
+                        <span ><b>freteForm</b></span>
+                        <a href="#freteForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>FormGroup | any</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/pages/calcular-frete/calcular-frete.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Formulário para coletar informações necessárias para o cálculo de frete.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="freteRequisicao"></a>
+                    <span class="name">
+                        <span ><b>freteRequisicao</b></span>
+                        <a href="#freteRequisicao"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/FreteRequisicao.html" target="_self" >FreteRequisicao</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new FreteRequisicao()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/pages/calcular-frete/calcular-frete.component.ts:22</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Representa os dados da requisição de cálculo de frete.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="freteResposta"></a>
+                    <span class="name">
+                        <span ><b>freteResposta</b></span>
+                        <a href="#freteResposta"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/FreteResponse.html" target="_self" >FreteResponse | any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/pages/calcular-frete/calcular-frete.component.ts:27</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Representa a resposta do cálculo de frete ou qualquer valor.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listaErros"></a>
+                    <span class="name">
+                        <span ><b>listaErros</b></span>
+                        <a href="#listaErros"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/pages/calcular-frete/calcular-frete.component.ts:37</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Lista de erros recebidos em resposta ao cálculo de frete.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { FormBuilder, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
+import { FreteRequisicao } from &#x27;src/app/models/frete-requisicao&#x27;;
+import { FreteResponse } from &#x27;src/app/models/frete-response&#x27;;
+import { CalcularFreteService } from &#x27;src/app/services/calcular-frete.service&#x27;;
+
+/**
+ * Componente responsável por permitir aos usuários calcular o valor do frete de uma entrega.
+ */
+@Component({
+  selector: &#x27;app-calcular-frete&#x27;,
+  templateUrl: &#x27;./calcular-frete.component.html&#x27;,
+  styleUrls: [&#x27;./calcular-frete.component.scss&#x27;]
+})
+
+
+export class CalcularFreteComponent implements OnInit  {
+
+/**
+   * Representa os dados da requisição de cálculo de frete.
+   */
+freteRequisicao: FreteRequisicao &#x3D; new FreteRequisicao();
+
+/**
+ * Representa a resposta do cálculo de frete ou qualquer valor.
+ */
+freteResposta: FreteResponse | any;
+
+/**
+ * Formulário para coletar informações necessárias para o cálculo de frete.
+ */
+freteForm: FormGroup | any;
+
+/**
+ * Lista de erros recebidos em resposta ao cálculo de frete.
+ */
+listaErros: any[] &#x3D; [];
+
+/**
+ * Construtor do componente &#x60;CalcularFreteComponent&#x60;.
+ *
+ * @param sigaBemService Um serviço para calcular o frete.
+ * @param formBuilder Um serviço para criar formulários reativos.
+ */
+constructor(private sigaBemService: CalcularFreteService, private formBuilder: FormBuilder) {}
+
+  /**
+   * Inicializa o componente, criando o formulário de cálculo de frete.
+   */
+  ngOnInit() {
+    this.createFreteForm();
+  }
+
+  
+  /**
+   * Realiza o cálculo do frete com base nos dados fornecidos pelo usuário.
+   */
+  calcularFrete() {
+   
+    this.listaErros &#x3D; [];
+    this.freteRequisicao &#x3D; this.freteForm.value;
+  
+    this.sigaBemService.calcularFrete(this.freteRequisicao).subscribe(
+      (resposta) &#x3D;&gt; {
+        this.freteResposta &#x3D; resposta;
+       
+      },
+      (error) &#x3D;&gt; {
+        if (error.status &#x3D;&#x3D;&#x3D; 404) {
+          if (error.error instanceof Array) {
+            this.listaErros &#x3D; this.listaErros.concat(error.error);
+          } else {
+            this.listaErros.push(error.error);
+          }
+        }
+      }
+    );
+  }
+  
+
+  /**
+   * Cria o formulário de cálculo de frete com as validações necessárias.
+   */
+  createFreteForm() {
+    this.freteForm &#x3D; this.formBuilder.group({
+      cepOrigem: [&#x27;&#x27;, [Validators.required, Validators.pattern(/^\d{8}$/)]],
+      cepDestino: [&#x27;&#x27;, [Validators.required, Validators.pattern(/^\d{8}$/)]],
+      nomeDestinatario: [&#x27;&#x27;, Validators.required],
+      peso: [&#x27;&#x27;, Validators.required],
+    });
+  }
+
+   /**
+   * Fecha o alerta de erro exibido ao usuário.
+   */
+  fecharAlerta() {
+    this.listaErros &#x3D; [];
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;container mt-5&quot;&gt;
+  &lt;div class&#x3D;&quot;alert alert-danger alert-dismissible fade show mt-5&quot; role&#x3D;&quot;alert&quot; *ngIf&#x3D;&quot;listaErros &amp;&amp; listaErros.length &gt; 0&quot;&gt;
+    &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn-close&quot; aria-label&#x3D;&quot;Close&quot; (click)&#x3D;&quot;fecharAlerta()&quot;&gt;&lt;/button&gt;
+    &lt;ng-container *ngFor&#x3D;&quot;let erro of listaErros&quot;&gt;
+      &lt;div&gt;{{ erro.message }}&lt;/div&gt;
+    &lt;/ng-container&gt;
+  &lt;/div&gt;
+  
+    &lt;div class&#x3D;&quot;row justify-content-center&quot;&gt;
+      &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+        &lt;h2 class&#x3D;&quot;fw-bold text-center&quot;&gt;Consulta de Frete&lt;/h2&gt;
+        &lt;form [formGroup]&#x3D;&quot;freteForm&quot; (ngSubmit)&#x3D;&quot;calcularFrete()&quot; class&#x3D;&quot;row g-3&quot;&gt;
+          &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+              &lt;label for&#x3D;&quot;cepOrigem&quot;&gt;CEP de Origem&lt;/label&gt;
+              &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;cepOrigem&quot; class&#x3D;&quot;form-control&quot; formControlName&#x3D;&quot;cepOrigem&quot; appCepMask&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+              &lt;label for&#x3D;&quot;cepDestino&quot;&gt;CEP de Destino&lt;/label&gt;
+              &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;cepDestino&quot; class&#x3D;&quot;form-control&quot; formControlName&#x3D;&quot;cepDestino&quot; appCepMask&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+              &lt;label for&#x3D;&quot;nomeDestinatario&quot;&gt;Nome do Destinatário&lt;/label&gt;
+              &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;nomeDestinatario&quot; class&#x3D;&quot;form-control&quot; formControlName&#x3D;&quot;nomeDestinatario&quot;&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+              &lt;label for&#x3D;&quot;peso&quot;&gt;Peso da Carga (em kg)&lt;/label&gt;
+              &lt;input type&#x3D;&quot;number&quot; id&#x3D;&quot;peso&quot; class&#x3D;&quot;form-control&quot; formControlName&#x3D;&quot;peso&quot;&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;col-12 text-center mt-3&quot;&gt;
+            &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-primary&quot; &gt;Calcular Frete&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/form&gt;
+  
+   
+        &lt;div *ngIf&#x3D;&quot;freteResposta&quot; class&#x3D;&quot;mt-3&quot;&gt;
+          &lt;h3  class&#x3D;&quot;fw-bold&quot;&gt;Calculo do Frete&lt;/h3&gt;
+          &lt;p&gt;Valor Total do Frete: {{ freteResposta.vlTotalFrete | currency : &#x27;BRL&#x27;}}&lt;/p&gt;
+          &lt;p&gt;Data Prevista de Entrega: {{ freteResposta.dataPrevistaEntrega | date: &#x27;dd/MM/yyyy&#x27; }}&lt;/p&gt;
+          &lt;p&gt;CEP de Origem: {{ freteResposta.cepOrigem | slice:0:5 }}-{{ freteResposta.cepOrigem | slice:5:8 }}&lt;/p&gt;
+          &lt;p&gt;CEP de Destino: {{ freteResposta.cepDestino | slice:0:5 }}-{{ freteResposta.cepDestino | slice:5:8 }}&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  </code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./calcular-frete.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="container mt-5">  <div class="alert alert-danger alert-dismissible fade show mt-5" role="alert" *ngIf="listaErros && listaErros.length > 0">    <button type="button" class="btn-close" aria-label="Close" (click)="fecharAlerta()"></button>    <ng-container *ngFor="let erro of listaErros">      <div>{{ erro.message }}</div>    </ng-container>  </div>      <div class="row justify-content-center">      <div class="col-md-6">        <h2 class="fw-bold text-center">Consulta de Frete</h2>        <form [formGroup]="freteForm" (ngSubmit)="calcularFrete()" class="row g-3">          <div class="col-md-12">            <div class="form-group">              <label for="cepOrigem">CEP de Origem</label>              <input type="text" id="cepOrigem" class="form-control" formControlName="cepOrigem" appCepMask>            </div>          </div>          <div class="col-md-12">            <div class="form-group">              <label for="cepDestino">CEP de Destino</label>              <input type="text" id="cepDestino" class="form-control" formControlName="cepDestino" appCepMask>            </div>          </div>          <div class="col-md-12">            <div class="form-group">              <label for="nomeDestinatario">Nome do Destinatário</label>              <input type="text" id="nomeDestinatario" class="form-control" formControlName="nomeDestinatario">            </div>          </div>          <div class="col-md-12">            <div class="form-group">              <label for="peso">Peso da Carga (em kg)</label>              <input type="number" id="peso" class="form-control" formControlName="peso">            </div>          </div>          <div class="col-12 text-center mt-3">            <button type="submit" class="btn btn-primary" >Calcular Frete</button>          </div>        </form>             <div *ngIf="freteResposta" class="mt-3">          <h3  class="fw-bold">Calculo do Frete</h3>          <p>Valor Total do Frete: {{ freteResposta.vlTotalFrete | currency : \'BRL\'}}</p>          <p>Data Prevista de Entrega: {{ freteResposta.dataPrevistaEntrega | date: \'dd/MM/yyyy\' }}</p>          <p>CEP de Origem: {{ freteResposta.cepOrigem | slice:0:5 }}-{{ freteResposta.cepOrigem | slice:5:8 }}</p>          <p>CEP de Destino: {{ freteResposta.cepDestino | slice:0:5 }}-{{ freteResposta.cepDestino | slice:5:8 }}</p>        </div>      </div>    </div>  </div>  </div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CalcularFreteComponent', 'selector': 'app-calcular-frete'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'NavbarComponent', 'selector': 'app-navbar'}];
+    var DIRECTIVES = [{'name': 'CepMaskDirective', 'selector': '[appCepMask]'}];
+    var ACTUAL_COMPONENT = {'name': 'CalcularFreteComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'CalcularFreteComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
